@@ -4,7 +4,7 @@
   "description": "testing express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node .\\node_modules\\mocha\\bin\\mocha test/ --watch --recursive",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -16,6 +16,10 @@
   "author": "Dragos-Paul Pop",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.4.0"
   }
 }
